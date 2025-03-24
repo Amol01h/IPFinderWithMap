@@ -12,7 +12,7 @@ const GoogleMapComponent = ({ latitude, longitude }) => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyDj0hlVMnkGpomg3BGRL8nNzTB82L33C_Q">
+    <LoadScript googleMapsApiKey="google_Key">
       <GoogleMap mapContainerStyle={mapStyles} zoom={10} center={defaultCenter}>
         <Marker position={defaultCenter} />
       </GoogleMap>
