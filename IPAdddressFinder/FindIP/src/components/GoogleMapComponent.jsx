@@ -7,7 +7,7 @@ const GoogleMapComponent = ({ latitude, longitude }) => {
   };
 
   const defaultCenter = {
-    lat: latitude ? parseFloat(latitude) : 0, // Ensure it's a number
+    lat: latitude ? parseFloat(latitude) : 0, 
     lng: longitude ? parseFloat(longitude) : 0,
   };
 
