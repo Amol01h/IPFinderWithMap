@@ -8,19 +8,18 @@ const DataRenderWithMap = () => {
     "Data Item 4",
     "Data Item 5",
   ]);
-  const [showMap, setShowMap] = useState(false); // State to control map visibility
-  const [dataVisible, setDataVisible] = useState(false); // State to control data animation
-
+  const [showMap, setShowMap] = useState(false);
+  const [dataVisible, setDataVisible] = useState(false);
   useEffect(() => {
-    // Simulate data rendering with animations
+    
     const timer = setTimeout(() => {
-      setDataVisible(true); // Trigger data animation
+      setDataVisible(true); 
     }, 100);
 
-    // Move data container to the top and show map after data is rendered
+    
     const mapTimer = setTimeout(() => {
-      setShowMap(true); // Show the map
-    }, data.length * 200 + 500); // Wait for all data items to render
+      setShowMap(true); 
+    }, data.length * 200 + 500);
 
     return () => {
       clearTimeout(timer);
